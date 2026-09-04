@@ -23,3 +23,10 @@ labels:
 ```
 docker compose up -d
 ```
+
+Para establecer la hora misma que la local se debe agregar esta configuración en la sección de volumes:
+```bash
+volumes:
+     - /etc/localtime:/etc/localtime:ro
+     - /etc/timezone:/etc/timezone:ro
+```
